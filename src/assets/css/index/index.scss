@@ -1,29 +1,39 @@
 .page-index{
+  dl{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
     .m-menu {
-      width: 230px;
-      height: 475px;
+      width: 201px;
+      height: 463px;
       box-sizing: border-box;
-      margin-top: -50px;
-      margin-left: 20px;
+      margin-top: -34px;
+      margin-left: 45px;
       color: #FFF;
       position: relative;
       background: linear-gradient(-180deg, rgba(2, 181, 157, .85) 2%, rgba(22, 146, 183, .85) 100%);
       dt {
-        height: 50px;
-        padding-top: 15px;
+        height: 38px;
+        padding-top: 20px;
+       
         box-sizing: border-box;
         font-size: 16px;
-        font-weight: 400;
-        margin-left: 15px;
+        font-weight: 400;   
+         margin-left: -100px;
         margin-bottom: 10px;
+    
       }
 
       dd {
         position: relative;
         box-sizing: border-box;
-        padding: 2px 12px;
+        padding: 2px 1px;
         height: 26px;
+        -webkit-margin-start: 0px;
+        margin-inline-start: 0px;
         cursor: pointer;
+        left: -143px;
+        width: 333px;
 
         &:hover {
           background: rgba(255, 255, 255, .2);
@@ -148,6 +158,10 @@
             content: "\e621";
           }
         }
+        .names{
+          // color: red;
+          position: absolute;
+        }
 
         .arrow {
           width: 4px;
@@ -167,9 +181,9 @@
       .detail {
         padding: 0 30px;
         position: absolute;
-        left: 230px;
+        left: 202px;
         bottom: 0;
-        width: 400px;
+        width: 300px;
         height: 416px;
         background: #fff;
         z-index: 9999;
@@ -216,4 +230,3 @@
     padding-bottom: 35px;
   }
 }
-

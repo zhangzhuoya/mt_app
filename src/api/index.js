@@ -9,7 +9,7 @@ var api = {
     return axios.get('/api/meituan/header/search.json')
   },
   getMenuList () {
-    return axios.get('/api/meituan/index/nav.json')
+    return axios.get('@/assets/data/MenuList.json')
   },
   resultsByKeywords () {
     return axios.get('/api/meituan/index/resultsByKeywords.json')
