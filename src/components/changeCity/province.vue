@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="aa">
     <span class="name">按省份选择:</span>
     <m-select
       :list="provinceList"
@@ -20,8 +20,9 @@
       :disabled="cityDisabled"
       className="city"
     />
-    <span>直接搜索:</span>
+    <span class="zs">直接搜索:</span>
     <el-select
+     class="el-s"
       v-model="searchWord"
       filterable
       remote

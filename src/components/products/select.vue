@@ -5,10 +5,10 @@
                 {{name}}
                 <i class="el-icon-caret-bottom"></i>
             </dt>
-            <dd>
+            <div>
                 <dt class="select-title">{{name}}</dt>
                 <span v-for="(item, index) in list" :key="index">{{item.name}}</span>
-            </dd>
+            </div>
         </dl>
     </div>
 </template>

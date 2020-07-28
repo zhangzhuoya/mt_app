@@ -8,6 +8,12 @@ import './styles.scss'
 import '@/assets/css/main.css'
 Vue.use(ElementUI)
 
+Vue.directive('document-click', {
+  bind (binding) {
+    document.addEventListener('click', binding.value, false)
+  }
+})
+
 Vue.config.productionTip = false
 
 new Vue({
