@@ -3,6 +3,7 @@
     <dl class="classic">
       <dt>分类</dt>
       <dt>全部</dt>
+
       <dd v-for="(item) in classicList" :key="item.type">
         <m-select :name="item.title" :list="item.sub_list"/>
       </dd>
@@ -10,7 +11,7 @@
     <dl class="classic">
       <dt>区域</dt>
       <dt>全部</dt>
-      <dd v-for="(item) in areaList" :key="item.type">
+      <dd class="menu" v-for="(item) in areaList" :key="item.type">
         <m-select :name="item.title" :list="item.sub_list"/>
       </dd>
     </dl>
@@ -84,3 +85,8 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+.menu{
+  margin-left: 0px;
+}
+</style>

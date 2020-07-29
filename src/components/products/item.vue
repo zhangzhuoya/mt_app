@@ -37,7 +37,7 @@
       </p>
       <p>
           <span class="s-item-price">
-              人均￥{{meta.avg_price}}
+              人均￥78
           </span>
       </p>
       <ul class="deal-items">

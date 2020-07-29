@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     submit () {
-      console.log(this.userName, this.password)
+      // console.log(this.userName, this.password)
       if (!this.userName) {
         this.error = '请输入账号'
         return false
@@ -72,7 +72,7 @@ export default {
           password: this.password
         }
       }).then((res) => {
-        console.log(res)
+        // console.log(res)
         if (res.data.status === 'success') {
           this.$router.push({ name: 'index' })
           this.$store.commit('setUserName', this.userName)

@@ -4,7 +4,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-  position: {},
+  position: '北京',
   userName: ''
 }
 
@@ -20,6 +20,7 @@ const mutations = {
 const actions = {
   setPosition ({ commit }, val) {
     // 异步请求后端获取当前位置数据
+    console.log(this.state.position)
     commit('setPosition', val)
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="m-products-list">
-    <ul>
+    <ul class="ms">
       <li v-for="item in nav" :key="item.key" :class="{'s-nav-active': item.active}">{{item.name}}</li>
     </ul>
     <el-row>
@@ -49,3 +49,9 @@ export default {
   }
 }
 </script>
+<style lang="scss" scoped>
+@import "@/assets/css/products/list.scss";
+.ms{
+  margin-left: -450px;
+}
+</style>

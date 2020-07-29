@@ -110,7 +110,9 @@ export default {
       })
     },
     input () {
+      // 数字
       var regStr = /(\w)+/g
+      // 字母
       var regNum = /(\d)+/g
       var reg = /_/g
       var strongth = this.registerForm.password.match(reg) && this.registerForm.password.match(regStr) && this.registerForm.password.match(regNum)
